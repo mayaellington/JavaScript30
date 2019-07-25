@@ -1,0 +1,25 @@
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
+--everytime i have another argument to push, it will put it to the end of the array
+
+
+... 'spread into a function'
+
+-.filter will chisel down into subset of initial array
+
+
+<span> The HTML <span> element is a generic inline container for phrasing content, 
+which does not inherently represent anything. It can be used to group elements for styling 
+purposes (using the class or id attributes), or because they share attribute values, such as lang .
+
+--REGEX? The RegExp constructor creates a regular expression object for matching text with a pattern.
+
+
+-blob: A Blob object represents a file-like object of immutable, raw data. Blobs represent data that
+ isn't necessarily in a JavaScript-native format. The File interface is based on Blob, inheriting blob
+  functionality and expanding it to support files on the user's system.
+
+
+
+-The Element property innerHTML gets or sets the HTML or XML markup contained within the element.
+
+-`` is returning a template literal
