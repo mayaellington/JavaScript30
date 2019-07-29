@@ -1,0 +1,11 @@
+.some() will check if at least 1 thing in your array meets what
+you're looking for
+
+
+.every() is everybody meeting what you're looking for
+
+.find() is like filter, instead of subset of array will
+return first item
+
+
+The slice() method returns the selected elements in an array, as a new array object.
