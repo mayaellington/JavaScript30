@@ -6,7 +6,7 @@
 </head>
 <body>
 
-  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+  <p onClick="makeGreen()">×BREAK×DOWN×</p> 
 
   <script>
     const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
@@ -18,28 +18,64 @@
     }
 
     // Regular
+    console.log('hello');
 
     // Interpolated
+    console.log('Hello I am a %s string!', '💩')
+    //console.log(`Hello I am ${var}`)
 
     // Styled
+    console.log('%cI am some great text', 
+    'font-size: 50px; background: red; text-shadow: 10px')
 
     // warning!
+    console.warn('OH NOOO') //gives stack traces to where it got called
 
     // Error :|
+    console.error('Shit!'); //also gives stack trace
 
     // Info
+    console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
+    const p = document.querySelector('p')
+    console.assert(p.classList.contains('ouch'), 'that is wrong'); 
+          //will only assert if it is wrong
+          //tests for true/false, gives false message
+    
 
     // clearing
+    console.clear(); //clears console duh--more examples of when to use?
 
     // Viewing DOM Elements
+    console.log(p); //shows actual element itself
+    console.dir(p); //gives drop down menu that you can open up
+
+    console.clear();
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`); //will group printed stuff based on category
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age7} years old`)
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      console.groupEnd(`${dog.name}`); //this returns the same thing even if you leave empty in parenthesis
+    });
+/////question: do you always use backticks w ${} ??
 
     // counting
+    console.count() //counts how many times you use word/object/etc, logs in real time how many counted at that time
 
     // timing
+console.time('fetching data'); //lets you know how long things are taking to receive 
+fetch('https://api.github.com/users/wesbos')
+    .then(data => data.json())
+    .then(data => {
+      console.timeEnd('fetching data');
+      console.log(data);
+    });
+
+    console.table(dogs) //take array of objects, assuming have same properties, will display in nice table
 
   </script>
 </body>
