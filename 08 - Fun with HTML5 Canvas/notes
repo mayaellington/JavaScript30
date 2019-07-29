@@ -1,0 +1,9 @@
+jump to beginning/end of line with COMMAND > COMMAND <
+
+ctx is where you do all drawing for canvas
+
+
+https://mothereffinghsl.com/
+
+globalCompositeOperator deals with how brush strokes 
+interact whien layered on top of each other 
